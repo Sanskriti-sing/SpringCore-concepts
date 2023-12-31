@@ -8,13 +8,19 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
  
+ 
+ <context:annotation-config />
+ 
+ <!--  
 <bean class="com.springcore.lifecycle.Samosa" name="s1" init-method="hye" destroy-method="bye">
-
 <property name="price" value="10" />
 </bean>
  
  <bean class="com.springcore.lifecycle.pepsi" name="p1" >
-
 <property name="price" value="20" />
+</bean>
+-->
+ <bean class="com.springcore.lifecycle.ExampleAnnotation" name="example" >
+<property name="subject" value="maths" />
 </bean>
 </beans>
